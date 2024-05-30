@@ -2,21 +2,7 @@
 -- TablePlus 5.6.0(514)
 --
 -- https://tableplus.com/
---
--- Database: appsalon_mvc_php
--- Generation Time: 2023-11-07 13:44:22.5890
 -- -------------------------------------------------------------
-
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
-/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
-/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
-/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
-/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
-
 
 CREATE TABLE `citas` (
   `id` int NOT NULL AUTO_INCREMENT,
@@ -59,14 +45,8 @@ CREATE TABLE `usuarios` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb3;;
 
-INSERT INTO `citas` (`id`, `fecha`, `hora`, `usuarioId`) VALUES
-(22, '2023-11-29', '10:30:00', 9);
-
-INSERT INTO `citasServicios` (`id`, `citaId`, `servicioId`) VALUES
-(18, 22, 2);
-
 INSERT INTO `servicios` (`id`, `nombre`, `precio`) VALUES
-(1, 'Corte de Cabello Mujer ACTUALIZADO', 120.00),
+(1, 'Corte de Cabello Mujer', 120.00),
 (2, 'Corte de Cabello Hombre', 80.00),
 (3, 'Corte de Cabello Niño', 60.00),
 (4, 'Peinado Mujer', 80.00),
@@ -78,11 +58,3 @@ INSERT INTO `servicios` (`id`, `nombre`, `precio`) VALUES
 (10, 'Lavado de Cabello', 50.00),
 (11, 'Tratamiento Capilar', 150.00);
 
-
-/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
-/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
-/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
-/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
